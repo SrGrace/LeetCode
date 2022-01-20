@@ -8,13 +8,17 @@ class Solution:
                 if cur_load > max_load_allowed:
                     cur_load = w
                     ship_req += 1
+                    if ship_req + 1 > days:
+                        return 0
                     
-            return ship_req + 1
+            return 1  # ship_req + 1
         
         l, r = max(weights), sum(weights)
         while(l < r):
             max_load_allowed = l + (r-l)//2
-            if min_ship_req(max_load_allowed) <= days:
+            # if min_ship_req(max_load_allowed) <= days:
+            #     r = max_load_allowed
+            if min_ship_req(max_load_allowed):
                 r = max_load_allowed
             else:
                 l = max_load_allowed + 1
