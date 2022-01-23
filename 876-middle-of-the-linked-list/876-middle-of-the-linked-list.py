@@ -10,7 +10,7 @@ class Solution:
             slw = slw.next
             fst = fst.next.next
             
-            if not fst or not fst.next:
-                return slw
-        return head
+            # if not fst or not fst.next:
+            #     return slw
+        return slw  # head
     
