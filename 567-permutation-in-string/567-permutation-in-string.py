@@ -1,5 +1,8 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
+        if len(s1) > len(s2):
+            return False
+        
         a1, a2 = [0]*26, [0]*26
         for x in s1:
             a1[ord(x) - ord('a')] += 1
