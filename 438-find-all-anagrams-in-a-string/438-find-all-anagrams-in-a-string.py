@@ -1,12 +1,12 @@
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
-        # hsh = {}
-        # for ch in p:
-        #     if ch in hsh:
-        #         hsh[ch] += 1
-        #     else:
-        #         hsh[ch] = 1
-        hsh = collections.Counter(p)
+        hsh = {}
+        for ch in p:
+            if ch in hsh:
+                hsh[ch] += 1
+            else:
+                hsh[ch] = 1
+        # hsh = collections.Counter(p)
         res = []
         len_p = len(p)
         # for i, ch in enumerate(s):
