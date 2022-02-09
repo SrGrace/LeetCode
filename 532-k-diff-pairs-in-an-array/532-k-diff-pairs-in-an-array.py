@@ -13,7 +13,7 @@ class Solution:
         if k > 0:
             cnt = sum([i+k in hsh for i in hsh])
         else:
-            cnt = sum([hsh[i] > 1 for i in hsh])
+            cnt = sum([hsh[i] > 1 for i in hsh]) # looking for pair of equal nums
             
         return cnt
         
