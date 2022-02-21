@@ -14,7 +14,7 @@ class Solution:
             if nums[i] == nums[cand]:
                 k += 1
                 
-        if k > n // 2:
+        if k > n / 2:
             return nums[cand]
         else:
             return -1
