@@ -13,3 +13,4 @@ class Solution:
             if slw == fst:
                 return 1
         return 0
+    
