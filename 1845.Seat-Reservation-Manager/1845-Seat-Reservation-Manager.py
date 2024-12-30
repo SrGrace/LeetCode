@@ -1,7 +1,7 @@
 class SeatManager:
 
     def __init__(self, n: int):
-        self.available_seats  = [i for i in range(1, n+1)]
+        self.available_seats = [i for i in range(1, n+1)]
 
     def reserve(self) -> int:
         seat_number = heapq.heappop(self.available_seats)
