@@ -14,4 +14,27 @@ class Solution:
         #     ans = max(ans, lis[i])
         
         return max(lis) # ans #O(n^2)
+
+
+
+
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+
+        n = len(nums)
+        lis = [0]*(n+1)
+
+        ans = 0
+        for x in nums:
+            i, j = 0, ans
+            while i != j:
+                mid = int(i + (j-i)/2)
+                if lis[mid] < x:
+                    i = mid + 1
+                else:
+                    j = mid
+            lis[i] = x
+            ans = max(ans, i+1)
+        return ans #O(nlogn)
+
         
