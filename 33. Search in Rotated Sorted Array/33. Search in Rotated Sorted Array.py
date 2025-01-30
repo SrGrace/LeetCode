@@ -19,6 +19,6 @@ class Solution:
                 else:
                     r = mid - 1
         print(l, r)
-        return -1
+        return -1 # O(logn)
 
     
