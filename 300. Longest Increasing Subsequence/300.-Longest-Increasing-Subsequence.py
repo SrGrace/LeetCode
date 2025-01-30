@@ -28,7 +28,7 @@ class Solution:
         for x in nums:
             i, j = 0, ans
             while i != j:
-                mid = int(i + (j-i)/2)
+                mid = i + (j-i)//2
                 if lis[mid] < x:
                     i = mid + 1
                 else:
