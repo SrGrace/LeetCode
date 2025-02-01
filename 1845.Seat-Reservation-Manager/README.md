@@ -5,17 +5,18 @@ Design a system that manages the reservation state of n seats that are numbered 
 
 Implement the SeatManager class:
 
-SeatManager(int n) Initializes a SeatManager object that will manage n seats numbered from 1 to n. All seats are initially available.
+- SeatManager(int n) Initializes a SeatManager object that will manage n seats numbered from 1 to n. All seats are initially available.
 
-int reserve() Fetches the smallest-numbered unreserved seat, reserves it, and returns its number.
+- int reserve() Fetches the smallest-numbered unreserved seat, reserves it, and returns its number.
 
-void unreserve(int seatNumber) Unreserves the seat with the given seatNumber.
+- void unreserve(int seatNumber) Unreserves the seat with the given seatNumber.
  
 
-
+---
 Example 1:
 
 Input
+
 ["SeatManager", "reserve", "reserve", "unreserve", "reserve", "reserve", "reserve", "reserve", "unreserve"]
 
 [[5], [], [], [2], [], [], [], [], [5]]
@@ -47,15 +48,15 @@ seatManager.reserve();    // The only available seat is seat 5, so return 5.
 seatManager.unreserve(5); // Unreserve seat 5, so now the available seats are [5].
 
  
-
+---
 Constraints:
 
-1 <= n <= 105
+- 1 <= n <= 105
 
-1 <= seatNumber <= n
+- 1 <= seatNumber <= n
 
-For each call to reserve, it is guaranteed that there will be at least one unreserved seat.
+- For each call to reserve, it is guaranteed that there will be at least one unreserved seat.
 
-For each call to unreserve, it is guaranteed that seatNumber will be reserved.
+- For each call to unreserve, it is guaranteed that seatNumber will be reserved.
 
-At most 105 calls in total will be made to reserve and unreserve.
+- At most 105 calls in total will be made to reserve and unreserve.
