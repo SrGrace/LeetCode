@@ -6,4 +6,4 @@ class Solution:
                 return [i, hsh[target - nums[i]]]
             else:
                 hsh[nums[i]] = i
-        return -1
+        return -1 # O(n), O(n)
