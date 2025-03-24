@@ -17,3 +17,27 @@ class Solution:
                 return False
         return True  # O(nlogn), O(n)
     
+
+
+# 2nd approach
+class Solution:
+    def carPooling(trips, capacity):
+        max_location = 1001  # Assuming locations are between 0 and 1000
+        changes = [0] * (max_location + 1)
+    
+        for numPassengers, from_loc, to_loc in trips:
+            changes[from_loc] += numPassengers # passenger get on
+            changes[to_loc] -= numPassengers  # passenger get off
+    
+        current_passengers = 0
+        for change in changes:
+            current_passengers += change
+            if current_passengers > capacity:
+                return False
+    
+        return True  # O(n+m), O(n)
+
+# Example usage:
+trips = [[2, 1, 5], [3, 3, 7]]
+capacity = 4
+print(carPooling(trips, capacity))  # Output: False
