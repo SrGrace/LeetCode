@@ -8,7 +8,7 @@ class Solution:
                 st = i
             tot += gas[i] - cost[i]
         
-        return -1 if tot < 0 else st
+        return -1 if tot < 0 else st # O(n), O(1)
     
     
     
