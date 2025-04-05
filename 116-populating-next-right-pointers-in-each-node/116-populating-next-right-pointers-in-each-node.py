@@ -25,6 +25,6 @@ class Solution:
                     break
                 cur = cur.next
                 
-        return head # O(n), O(n)
+        return head # O(n), O(1) - constant extra space, pointer manipulation only
     
                 
