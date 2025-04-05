@@ -25,6 +25,6 @@ class Solution:
                     break
                 cur = cur.next
                 
-        return head
+        return head # O(n), O(n)
     
                 
