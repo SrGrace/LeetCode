@@ -10,5 +10,5 @@ class Solution:
             else:
                 direction = (direction[1], -direction[0])
 
-        return (x == 0 and y == 0) or direction != (0, 1)
+        return (x == 0 and y == 0) or direction != (0, 1) # O(n), O(n)
     
