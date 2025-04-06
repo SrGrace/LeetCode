@@ -9,6 +9,6 @@ class Solution:
             else:
                 l += 1
                 
-    
+    # O(n), O(1)
        
         
