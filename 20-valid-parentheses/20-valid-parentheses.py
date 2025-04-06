@@ -18,6 +18,6 @@ class Solution:
             else:
                 # print('else: {}'.format(ch))
                 stack.append(ch)
-        return len(stack) == 1
+        return len(stack) == 1 # O(n), O(1)
     
     
