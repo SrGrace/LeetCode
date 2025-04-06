@@ -6,6 +6,6 @@ class Solution:
         
         # return max_wealth
         
-        return sum(max(accounts, key=sum))
+        return sum(max(accounts, key=sum)) # O(n), O(1)
     
     
