@@ -20,6 +20,6 @@ class Solution:
                 if hsh[pattern[i]] != st[i]:
                     return 0
         
-        return 1
+        return 1 # O(n), O(n)
         
     
