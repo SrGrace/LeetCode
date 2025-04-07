@@ -7,6 +7,6 @@ class Solution:
                 last_match = hsh[ch]
             res = max(res, i - last_match)
             hsh[ch] = i
-        return res
+        return res # O(n), O(n)
         
         
