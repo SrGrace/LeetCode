@@ -6,4 +6,4 @@ class Solution:
             for i in range(coin, amount+1): # to avoid duplicate counting
                 dp[i] += dp[i-coin]
         print(dp)
-        return dp[-1]
+        return dp[-1] # O(m*n), O(n)
