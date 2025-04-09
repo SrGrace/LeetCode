@@ -5,5 +5,5 @@ class Solution:
             if ch in hsh and hsh[ch] > 0:
                 hsh[ch] -= 1
             else:
-                return ch
+                return ch # O(n), O(n)
         
