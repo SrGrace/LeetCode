@@ -4,5 +4,5 @@ class Solution:
         for i in range(n+1):
             res.append(i.bit_count())
         
-        return res
+        return res # O(n), O(n)
     
