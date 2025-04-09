@@ -8,6 +8,6 @@ class Solution:
             if st == -1:
                 return False
             st += 1
-        return True
+        return True # O(n), O(1)
     
     
