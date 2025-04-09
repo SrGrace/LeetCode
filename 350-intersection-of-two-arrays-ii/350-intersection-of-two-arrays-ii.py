@@ -11,5 +11,5 @@ class Solution:
             if n in hsh and hsh[n] > 0:
                 res.append(n)
                 hsh[n] -= 1
-        return res
+        return res # O(n), O(n)
     
