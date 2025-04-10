@@ -8,6 +8,6 @@ class Solution:
                 return 1 + dfs(r+1, c) + dfs(r-1, c) + dfs(r, c+1) + dfs(r, c-1)
             return 0
         
-        return max(dfs(r, c) for r in range(m) for c in range(n))
+        return max(dfs(r, c) for r in range(m) for c in range(n)) #  O(m*n), O(m*n)
     
     
