@@ -9,5 +9,4 @@ class Solution:
                     sell[k] = max(sell[k], p-buy[k])
             return sell[-1]
         
-        # O(k*n), O(k)
-        return maxProfitSfterKTrans(prices, 2)
+        return maxProfitSfterKTrans(prices, 2) # O(k*n), O(k)
