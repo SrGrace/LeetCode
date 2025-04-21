@@ -16,7 +16,7 @@ class Solution:
         l, r = max(weights), sum(weights)
         while(l < r):
             max_load_allowed = l + (r-l)//2
-=
+            
             if min_ship_req(max_load_allowed):
                 r = max_load_allowed
             else:
