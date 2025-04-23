@@ -39,5 +39,5 @@ class Solution:
                         r -= 1
                     else:
                         l += 1
-        return ans
+        return ans # O(n^3), O(1)
         
