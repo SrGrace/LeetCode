@@ -17,5 +17,5 @@ class Solution:
         if k > n / 2:
             return nums[cand]
         else:
-            return -1
+            return -1 # O(n), O(1)
         
