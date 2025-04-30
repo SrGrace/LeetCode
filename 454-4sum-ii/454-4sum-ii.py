@@ -3,6 +3,6 @@ class Solution:
         
         ij = collections.Counter(i+j for i in nums1 for j in nums2)
         # print(ij)
-        return sum(ij[0-(k+l)] for k in nums3 for l in nums4)
+        return sum(ij[0-(k+l)] for k in nums3 for l in nums4) # O(n^2), O(n^2)
         
         
