@@ -22,3 +22,16 @@ class Solution:
             max_profit = max(max_profit, p-min_price)
     
         return max_profit
+
+
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        # O(n), O(1)
+        initial_buy_price, max_profit = prices[0], 0
+        for current_price in prices[1:]:
+            if initial_buy_price > current_price:
+                initial_buy_price = current_price
+            max_profit = max(max_profit, current_price - initial_buy_price)
+
+        return max_profit
