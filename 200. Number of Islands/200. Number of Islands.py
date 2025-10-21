@@ -71,6 +71,6 @@ class Solution:
                     count += 1 # found a new island
                     dfs(i, j) # sink the entire island
         
-        return count
+        return count # O(n^2), O(n^2)
 
             
