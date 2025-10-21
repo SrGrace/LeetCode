@@ -59,7 +59,7 @@ class Solution:
                     return min(nums1_right_min, nums2_right_min)
                 else:
                     return (max(nums1_left_max, nums2_left_max) + min(nums1_right_min, nums2_right_min))/2
-            # If nums1's left is too large, reduce elements from nums1. 
+            # adjusting search: If nums1's left is too large, reduce elements from nums1. 
             elif nums1_left_max > nums2_right_min:
                 right = i - 1
             # Otherwise, increase them.
