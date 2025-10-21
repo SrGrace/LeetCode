@@ -50,7 +50,8 @@ class Solution:
         # utility to sink an entire island
         def dfs(i, j):
             # base case - check if we're out of bound or in water
-            if i < 0 or i >= m or j < 0 or j >= n or grid[i][j] == '0':
+            # if i < 0 or i >= m or j < 0 or j >= n or grid[i][j] == '0':
+            if m <= i < 0 or n <= j < 0 or grid[i][j] == '0':
                 return # stop recursion
 
             # mark current cell as visited by sinking it
